@@ -1,29 +1,39 @@
-# Environment variables
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+*.pem
+*.key
 
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
+*.egg-info/
+build/
+dist/
 
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
 
-# Testing
+# Testing and coverage
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Type checking
+# Type checking and linting
 .mypy_cache/
-
-# Ruff
 .ruff_cache/
 
-# VS Code
+# Local data and logs
+*.log
+*.sqlite3
+*.db
+
+# Editors
 .vscode/
+.idea/
 
 # OS
 .DS_Store
